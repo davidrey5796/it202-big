@@ -79,7 +79,7 @@ function initMap() {
   function createMarkers (map, data) {
     console.log(data);
     $.each(data, function(i,v) {
-
+    <!--This is a comment-->
       var location = {lat: parseFloat(v.latitude), lng: parseFloat(v.longitude) }
       
       var marker = new google.maps.Marker({position: location, map: map});
